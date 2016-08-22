@@ -68,5 +68,11 @@ namespace Ruben9922.Utilities.ConsoleUtilities
             } while (!inputValid);
             return option;
         }
+
+        public static bool ReadYOrN(string message = "Try again? (y/n): ")
+        {
+            Console.Write(message);
+            return Console.ReadLine().ToLower() == "y";
+        }
     }
 }
