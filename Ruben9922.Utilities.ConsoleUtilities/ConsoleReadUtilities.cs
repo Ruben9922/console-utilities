@@ -4,7 +4,7 @@ namespace Ruben9922.Utilities.ConsoleUtilities
 {
     public class ConsoleReadUtilities
     {
-        public static int ReadInt(string prompt, string errorMessage = "Integers only!", int? min = null, int? max = null)
+        public static int ReadInt(string prompt, int? min = null, int? max = null, string errorMessage = "Integers only!")
         {
             int result;
             bool inputValid = false;
