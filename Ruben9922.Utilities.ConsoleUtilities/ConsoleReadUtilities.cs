@@ -24,7 +24,7 @@ namespace RubenDougall.Utilities.ConsoleUtilities
             return result;
         }
         
-        public static double ReadDouble(string prompt, double min = double.MinValue, double max = double.MaxValue, string errorMessage = "Integers only!")
+        public static double ReadDouble(string prompt, double min = double.MinValue, double max = double.MaxValue, string errorMessage = "Real numbers only!")
         {
             double result;
             bool inputValid = false;
