@@ -12,7 +12,7 @@ namespace RubenDougall.Utilities.ConsoleUtilities
             {
                 Console.Write(prompt);
                 if (int.TryParse(Console.ReadLine(), out result) && (!min.HasValue || result >= min)
-                    && (!max.HasValue || result < max))
+                                                                 && (!max.HasValue || result < max))
                 {
                     inputValid = true;
                 }
@@ -21,6 +21,7 @@ namespace RubenDougall.Utilities.ConsoleUtilities
                     Console.WriteLine(errorMessage);
                 }
             } while (!inputValid);
+
             return result;
         }
 
@@ -40,11 +41,13 @@ namespace RubenDougall.Utilities.ConsoleUtilities
                         break;
                     }
                 }
+
                 if (!inputValid)
                 {
                     Console.WriteLine("Invalid option!");
                 }
             }
+
             return option;
         }
 
@@ -55,6 +58,7 @@ namespace RubenDougall.Utilities.ConsoleUtilities
             {
                 Console.WriteLine("  {0}: {1}", i, options[i]);
             }
+
             int option;
             bool inputValid;
             do
@@ -66,6 +70,7 @@ namespace RubenDougall.Utilities.ConsoleUtilities
                     Console.WriteLine("Invalid option!");
                 }
             } while (!inputValid);
+
             return option;
         }
 
