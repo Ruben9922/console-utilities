@@ -43,6 +43,26 @@ namespace RubenDougall.Utilities
 
             return result;
         }
+        
+        public static decimal ReadDecimal(string prompt, decimal min = decimal.MinValue, decimal max = decimal.MaxValue, string errorMessage = "Real numbers only!")
+        {
+            decimal result;
+            bool inputValid = false;
+            do
+            {
+                Console.Write(prompt);
+                if (decimal.TryParse(Console.ReadLine(), out result) && result >= min && result < max)
+                {
+                    inputValid = true;
+                }
+                else
+                {
+                    Console.WriteLine(errorMessage);
+                }
+            } while (!inputValid);
+
+            return result;
+        }
 
         public static string ReadOptionString(string[] validOptions, string prompt = "Enter option: ")
         {
