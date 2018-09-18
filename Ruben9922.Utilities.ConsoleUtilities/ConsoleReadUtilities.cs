@@ -23,6 +23,26 @@ namespace RubenDougall.Utilities.ConsoleUtilities
 
             return result;
         }
+        
+        public static double ReadDouble(string prompt, double min = double.MinValue, double max = double.MaxValue, string errorMessage = "Integers only!")
+        {
+            double result;
+            bool inputValid = false;
+            do
+            {
+                Console.Write(prompt);
+                if (double.TryParse(Console.ReadLine(), out result) && result >= min && result < max)
+                {
+                    inputValid = true;
+                }
+                else
+                {
+                    Console.WriteLine(errorMessage);
+                }
+            } while (!inputValid);
+
+            return result;
+        }
 
         public static string ReadOptionString(string[] validOptions, string prompt = "Enter option: ")
         {
