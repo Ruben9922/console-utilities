@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruben9922.Utilities.ConsoleUtilities", "Ruben9922.Utilities.ConsoleUtilities\Ruben9922.Utilities.ConsoleUtilities.csproj", "{80DC22FF-63E9-4ED1-AC1C-987DC43BD697}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubenDougall.Utilities.ConsoleUtilities", "Ruben9922.Utilities.ConsoleUtilities\RubenDougall.Utilities.ConsoleUtilities.csproj", "{80DC22FF-63E9-4ED1-AC1C-987DC43BD697}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

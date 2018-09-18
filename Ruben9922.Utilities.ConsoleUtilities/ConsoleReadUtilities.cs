@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ruben9922.Utilities.ConsoleUtilities
+namespace RubenDougall.Utilities.ConsoleUtilities
 {
     public class ConsoleReadUtilities
     {

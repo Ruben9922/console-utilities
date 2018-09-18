@@ -7,7 +7,7 @@
     <ProjectGuid>{80DC22FF-63E9-4ED1-AC1C-987DC43BD697}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ruben9922.Utilities.ConsoleUtilities</RootNamespace>
+    <RootNamespace>RubenDougall.Utilities.ConsoleUtilities</RootNamespace>
     <AssemblyName>Ruben9922.Utilities.ConsoleUtilities</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="ConsoleReadUtilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
