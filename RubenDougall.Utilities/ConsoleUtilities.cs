@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace RubenDougall.Utilities.ConsoleUtilities
+namespace RubenDougall.Utilities
 {
-    public class ConsoleReadUtilities
+    public class ConsoleUtilities
     {
         public static int ReadInt(string prompt, int min = int.MinValue, int max = int.MaxValue, string errorMessage = "Integers only!")
         {
