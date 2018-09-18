@@ -4,15 +4,14 @@ namespace RubenDougall.Utilities.ConsoleUtilities
 {
     public class ConsoleReadUtilities
     {
-        public static int ReadInt(string prompt, int? min = null, int? max = null, string errorMessage = "Integers only!")
+        public static int ReadInt(string prompt, int min = int.MinValue, int max = int.MaxValue, string errorMessage = "Integers only!")
         {
             int result;
             bool inputValid = false;
             do
             {
                 Console.Write(prompt);
-                if (int.TryParse(Console.ReadLine(), out result) && (!min.HasValue || result >= min)
-                                                                 && (!max.HasValue || result < max))
+                if (int.TryParse(Console.ReadLine(), out result) && result >= min && result < max)
                 {
                     inputValid = true;
                 }
