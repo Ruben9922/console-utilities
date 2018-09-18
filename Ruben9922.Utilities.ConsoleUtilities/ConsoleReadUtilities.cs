@@ -72,7 +72,8 @@ namespace RubenDougall.Utilities.ConsoleUtilities
         public static bool ReadYOrN(string message = "Try again? (y/n): ")
         {
             Console.Write(message);
-            return Console.ReadLine().ToLower() == "y";
+            string input = Console.ReadLine();
+            return input != null && input.ToLower() == "y";
         }
     }
 }
